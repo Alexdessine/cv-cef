@@ -30,6 +30,7 @@ html{
     font-weight: 400;
     color: var(--text);
     font-size: 100%;
+    background-color: rgba(51, 51, 51, .22);
 }
 
 /* Ajout de la police Lato pour les titres */
@@ -251,4 +252,27 @@ article{
     color: var(--blue);
     text-align: right;
     font-weight: bolder;
+}
+
+/* Mise en forme du footer */
+footer{
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    gap: 15px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+footer .social{
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    font-size: 1.7em;
+}
+
+footer .social a{
+    color: var(--white);
 }
