@@ -135,13 +135,13 @@ header nav a i {
 main{
     display: flex;
     background-color: red;
-    height: 100px;
+    height: auto;
 }
 
 .informations {
     width: 350px;
-    height: 100%;
-    background-color: green;
+    height: auto;
+    background-color: var(--grey-1);
     padding: 50px 50px;
 }
 
@@ -155,7 +155,7 @@ hr{
 .competences table,
 .langue table{
     width: 250px;
-    margin-bottom: 8px;
+    margin-bottom: 40px;
 }
 
 .competences table tr td,
@@ -177,7 +177,19 @@ hr{
     text-align: right;
 }
 
+.qualite ul, 
+.interet ul{
+    list-style: square;
+    line-height: 1.2;
+    padding-left: 23px;
+    margin-bottom: 40px;
+}
 
+.qualite ul li::marker, 
+.interet ul li::marker{
+    color: var(--blue);
+    font-size: 1.5em;
+}
 
 
 .details{
