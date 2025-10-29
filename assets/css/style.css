@@ -54,7 +54,7 @@ h3{
 }
 
 
-
+/* Le body doit faire 1160px de large et doit être centré sur la page et un fond coloré */
 body{
     max-width: 1160px;
     width: 100%;
@@ -62,6 +62,7 @@ body{
     background-color: var(--grey-2);
     font-size: 1rem;
 }
+
 
 header{
     display: flex;
@@ -76,13 +77,13 @@ header{
     padding: 0 100px;
 }
 
-
+/* On réparti l'espace pour l'image de profil */
 header .picture{
     max-width: 1160px;
     width: 40%;
 }
 
-
+/* Image ronde, avec bordure blanche de 5px */
 header img{
     width: 150px;
     height: 150px;
@@ -91,10 +92,12 @@ header img{
     object-fit: contain;
 }
 
+/* Au survol de l'image, l'icône de la souris change en zoom */
 header img:hover{
     cursor: zoom-in;
 }
 
+/* On réparti l'espace pour les informations du cv */
 header .identite{
     display: flex;
     flex-direction: column;
@@ -113,6 +116,7 @@ header nav{
     margin-top: 20px;
 }
 
+/* On aligne les coordonnées sur 2x2 */
 header nav a {
     flex: 0 0 50%;
     display: flex;
@@ -138,12 +142,14 @@ main{
     height: auto;
 }
 
+/* Mise en forme de la section information */
 .informations {
     width: 350px;
     height: auto;
     background-color: var(--grey-1);
     padding: 50px 50px;
 }
+
 
 hr{
     background-color: rgba(51, 51, 51, .22);
@@ -152,21 +158,25 @@ hr{
     margin-bottom: 18px;
 }
 
+/* Mise en forme des tables Compétences, langues */
 .competences table,
 .langue table{
     width: 250px;
     margin-bottom: 40px;
 }
 
+/* Agrandir la hauteur des lignes du tableau */
 .competences table tr td,
 .langue table tr td{
     height: 25px;
 }
 
+
 .competences table tr td:first-child{
     font-weight: bolder;
 }
 
+/* Mettre les étoiles des compétences en bleues et alignées sur la droite */
 .competences table tr td:last-child{
     text-align: right;
     font-size: .8rem;
@@ -177,6 +187,7 @@ hr{
     text-align: right;
 }
 
+/* Mettre en forme les listes */
 .qualite ul, 
 .interet ul{
     list-style: square;
@@ -185,13 +196,60 @@ hr{
     margin-bottom: 40px;
 }
 
+/* Mettre les puces des listes en bleues et réduire leur taille */
 .qualite ul li::marker, 
 .interet ul li::marker{
     color: var(--blue);
     font-size: 1.5em;
 }
 
-
+/* Cadre général de la section détail du cv (Profil, formation, stages, expérience) */
 .details{
     width: 810px;
+    background-color: var(--grey-2);
+    padding: 50px 50px;
+}
+
+
+article{
+    margin-bottom: 40px;
+}
+
+/* Mise en forme du texte de profil */
+.profil p{
+    text-indent: 1.5em;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+/* Mise en forme d'une formation, stage, expérience */
+.intitule{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    padding-left: 10px;
+    margin-left: -10px;   
+}
+
+/* AJouter un fond gris plus une bordure bleu au survol d'une formation, stage, expérience */
+.intitule:hover{
+    background-color: var(--grey-1);
+    border-left: outset 5px var(--blue);
+    padding-left: 5px;
+}
+
+.formation,
+.stage,
+.metier,
+.experience{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* L'année de l'expérience, stage, formation en bleue et alignée sur la droite */
+.intitule span{
+    color: var(--blue);
+    text-align: right;
+    font-weight: bolder;
 }
