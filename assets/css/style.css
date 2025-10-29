@@ -276,3 +276,7 @@ footer .social{
 footer .social a{
     color: var(--white);
 }
+
+footer .social a:hover{
+    opacity: 0.8;
+}
