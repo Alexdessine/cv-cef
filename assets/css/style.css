@@ -154,6 +154,10 @@ main{
     height: auto;
 }
 
+small{
+    font-size: smaller;
+}
+
 /* Mise en forme de la section information */
 .informations {
     width: 350px;
@@ -207,6 +211,15 @@ article{
     margin-bottom: 40px;
 }
 
+article.formation, article.metier, article.stage{
+    margin-bottom: 0;
+    line-height: 1.4em;
+}
+
+section small{
+    font-style: italic !important;
+}
+
 /* Mise en forme du texte de profil */
 .profil p{
     text-indent: 1.5em;
@@ -217,7 +230,7 @@ article{
 .intitule{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 5px 0;
     padding-left: 10px;
     margin-left: -10px;   
@@ -270,4 +283,8 @@ footer .social a{
 
 footer .social a:hover{
     opacity: 0.8;
+}
+
+footer small{
+    font-style: italic;
 }
