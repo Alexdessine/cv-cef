@@ -162,41 +162,21 @@ main{
     padding: 50px 50px;
 }
 
-
-hr{
-    background-color: rgba(51, 51, 51, .22);
-    height: 1px;
-    border: none;
-    margin-bottom: 18px;
+/* On remplace la table par une liste pour les compétences et les lanques */
+.competences ul li, 
+.langue ul li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5em;
 }
 
-/* Mise en forme des tables Compétences, langues */
-.competences table,
-.langue table{
-    width: 250px;
-    margin-bottom: 40px;
+.competences ul li span{
+    font-weight: bold;
 }
 
-/* Agrandir la hauteur des lignes du tableau */
-.competences table tr td,
-.langue table tr td{
-    height: 25px;
-}
-
-
-.competences table tr td:first-child{
-    font-weight: bolder;
-}
-
-/* Mettre les étoiles des compétences en bleues et alignées sur la droite */
-.competences table tr td:last-child{
-    text-align: right;
-    font-size: .8rem;
+.competences ul.rating{
     color: var(--blue);
-}
-
-.langue table tr td:last-child{
-    text-align: right;
+    font-size: 0.8em;
 }
 
 /* Mettre en forme les listes */
